@@ -1,0 +1,9 @@
+<h2>Movie with same director <%= @title %> </h2>
+<ul>
+  <% @movies_title.each do |movie_title| %>
+    <li>
+      <%= movie_title %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to 'Back to movie list', movies_path, :class => 'btn btn-primary col-2'%>
